@@ -227,7 +227,7 @@ export const VariantsPanelCreateFeatureFlag = ({
                                     disabledReason={
                                         disabled
                                             ? 'Cannot edit feature flag in edit mode'
-                                            : variant.key === 'control'
+                                            : variant.key === 'control' && index === 0
                                               ? 'Control variant cannot be changed'
                                               : null
                                     }
